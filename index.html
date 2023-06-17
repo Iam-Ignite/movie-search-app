@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Enter movie title">
+      <button id="search-button" class="search-button">Search</button>
+    </div>
+
+    <div class="sort-buttons">
+      <button id="sort-alphabetical-button" class="sort-button">Sort Alphabetically</button>
+      <button id="sort-release-button" class="sort-button">Sort by Release Date</button>
+    </div>
+
+    <div id="movies-container" class="movies-container"></div>
+
+    <div class="pagination" id="pagination-container"></div>
+
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <div id="modal" class="details-container">
+    </div>
+  </div>
+
+
+<script src="./index.js"></script>
+</body>
+
+</html>
